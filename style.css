@@ -42,6 +42,7 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: white;
 }
 
 .logo {
@@ -81,6 +82,17 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@keyframes rectmove {
+  to {
+    transform: translateX(400px);
+  }
+}
+#animate-cube {
+  stroke: #000;
+  animation: rectmove 4s ease-in-out 20 alternate;
+
 }
 
 @media (prefers-color-scheme: light) {
